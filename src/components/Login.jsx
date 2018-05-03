@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./Button.css";
 
 class Login extends Component {
@@ -14,7 +14,8 @@ class Login extends Component {
 					{/*<label for="exampleInputPassword1">Password</label>*/}
 					<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
 				</div>
-				<button type="submit" className="btn btn-primary">Submit</button>
+				<Link to="/Page2"><button type="submit" className="btn btn-primary">Submit</button></Link>
+
 			</form>
 		);
 	}
