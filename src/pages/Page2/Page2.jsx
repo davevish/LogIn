@@ -6,22 +6,13 @@ import Button from "../../components/Button";
 class Page2 extends Component {
 	render() {
 		return (
-			<div className="container col-sm-12" style={{marginTop: 100 + 'px'}}>
-				<div className="container row">
-					<div className="col-sm-4">
+			<div className="container" style={{marginTop: 100 + 'px'}}>
+				<div className="row">
+					<div className="container col-sm-5">
 						<Input/>
-						<Input/>
-						<Input/>
-					</div>
-					<div className="col-sm-4">
-						<Input/>
-						<Input/>
-						<Input/>
+						<Button/>
 					</div>
 				</div>
-
-				<Button/>
-
 			</div>
 		)
 	}
