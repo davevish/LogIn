@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import "./Button.css";
+import "../Button/Button.css";
 
 class Login extends Component {
 	render() {
@@ -13,7 +13,6 @@ class Login extends Component {
 					<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
 				</div>
 				<Link to="/Page2"><button type="submit" className="btn btn-primary">Submit</button></Link>
-
 			</form>
 		);
 	}

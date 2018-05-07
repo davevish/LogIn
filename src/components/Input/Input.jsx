@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListItems from '../ListItems/ListItems';
 import "./Input.css";
 
 class Input extends Component {
@@ -40,12 +41,11 @@ class Input extends Component {
 				<form onSubmit={this.addTask}>
 					<input ref={(a) => this._inputElement = a} type="text" className="form-control" placeholder="Enter New Task"/>
 				</form>
+
+				<ListItems entires={this.state.tasks}/>
 			</div>
 		);
 	}
 }
 
 export default Input;
-
-
-
